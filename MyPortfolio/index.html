@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Clark Jake N. Demition - Web Developer specializing in AI-powered solutions">
+    <meta name="theme-color" content="#667eea">
+    <title>Clark Jake N. Demition | Web Developer & AI Enthusiast</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+<base target="_blank">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="bg-gradient"></div>
+        <div class="particles" id="particles"></div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="header" id="header">
+        <div class="header-container">
+            <a href="#home" class="logo">
+                <span class="logo-icon"><i class="fa-solid fa-code"></i></span>
+                <span class="logo-text">Cijeeeyyy</span>
+            </a>
+
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active" data-section="home">
+                        <span class="nav-icon"><i class="fa-solid fa-home"></i></span>
+                        <span class="nav-text">Home</span>
+                    </a></li>
+                    <li><a href="#about" class="nav-link" data-section="about">
+                        <span class="nav-icon"><i class="fa-solid fa-user"></i></span>
+                        <span class="nav-text">About</span>
+                    </a></li>
+                    <li><a href="#internship" class="nav-link" data-section="internship">
+                        <span class="nav-icon"><i class="fa-solid fa-briefcase"></i></span>
+                        <span class="nav-text">Experience</span>
+                    </a></li>
+                    <li><a href="#projects" class="nav-link" data-section="projects">
+                        <span class="nav-icon"><i class="fa-solid fa-folder-open"></i></span>
+                        <span class="nav-text">Projects</span>
+                    </a></li>
+                    <li><a href="#contact" class="nav-link" data-section="contact">
+                        <span class="nav-icon"><i class="fa-solid fa-envelope"></i></span>
+                        <span class="nav-text">Contact</span>
+                    </a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fa-solid fa-sun"></i>
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Progress Bar -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="hero">
+                <div class="hero-content">
+                    <div class="hero-badge" data-aos="fade-down">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>Available for opportunities</span>
+                    </div>
+
+                    <div class="hero-image-container" data-aos="zoom-in">
+                        <div class="hero-image-wrapper">
+                            <img src="assets/image/profile.png" alt="Clark Jake Demition" class="hero-image">
+                            <div class="hero-image-ring"></div>
+                            <div class="hero-image-ring ring-2"></div>
+                        </div>
+                    </div>
+
+                    <h1 class="hero-title" data-aos="fade-up">
+                        <span class="greeting">Hello, I'm</span>
+                        <span class="name">Clark Jake N. Demition</span>
+                    </h1>
+
+                    <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="100">
+                        <span class="typing-text" id="typing-text"></span>
+                        <span class="cursor">|</span>
+                    </p>
+
+                    <p class="hero-description" data-aos="fade-up" data-aos-delay="200">
+                        Passionate Web Developer crafting innovative solutions with AI-powered technologies. 
+                        Transforming ideas into elegant, functional digital experiences.
+                    </p>
+
+                    <div class="hero-cta" data-aos="fade-up" data-aos-delay="300">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View My Work</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Get In Touch</span>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </a>
+                    </div>
+
+                    <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="2">0</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="5">0</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="100">0</span>
+                            <span class="stat-suffix">%</span>
+                            <span class="stat-label">AI-Assisted</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Navigation Cards -->
+            <div class="quick-nav">
+                <div class="quick-nav-card" onclick="navigateTo('about')" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>About Me</h3>
+                        <p>Discover my journey & skills</p>
+                    </div>
+                    <div class="card-arrow">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <div class="quick-nav-card" onclick="navigateTo('internship')" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Experience</h3>
+                        <p>Professional internship journey</p>
+                    </div>
+                    <div class="card-arrow">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <div class="quick-nav-card" onclick="navigateTo('projects')" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-folder-open"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Projects</h3>
+                        <p>Explore my portfolio works</p>
+                    </div>
+                    <div class="card-arrow">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <div class="quick-nav-card" onclick="navigateTo('contact')" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Contact</h3>
+                        <p>Let's work together</p>
+                    </div>
+                    <div class="card-arrow">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">Who I Am</h2>
+                <p class="section-subtitle">Get to know the person behind the code</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-image-section" data-aos="fade-right">
+                    <div class="about-image-container">
+                        <img src="assets/image/profile.png" alt="Clark Jake Demition" class="about-image">
+                        <div class="experience-badge">
+                            <span class="exp-number">2+</span>
+                            <span class="exp-text">Years<br>Experience</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-content-section" data-aos="fade-left">
+                    <div class="about-text">
+                        <h3>Web Developer & AI Enthusiast</h3>
+                        <p>
+                            Hello! I'm <strong>Clark Jake N. Demition</strong>, a passionate developer with experience 
+                            in web development and software engineering. I love creating innovative solutions and 
+                            learning new technologies, especially with the help of AI.
+                        </p>
+                        <p>
+                            My journey in technology has been driven by curiosity and a desire to solve real-world 
+                            problems through code. I believe in continuous learning and staying updated with the 
+                            latest industry trends.
+                        </p>
+                    </div>
+
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:clarkjakedemetion@gmail.com" class="contact-value">clarkjakedemetion@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Phone</span>
+                                <a href="tel:+639208515794" class="contact-value">+63 920 851 5794</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Location</span>
+                                <span class="contact-value">Valenzuela City, Philippines</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Download Resume</span>
+                        <i class="fa-solid fa-download"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div class="education-section" data-aos="fade-up">
+                <h3 class="subsection-title">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    Education
+                </h3>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h4>Bachelor of Science in Information Technology</h4>
+                                <span class="timeline-date">2022 – Present</span>
+                            </div>
+                            <span class="timeline-school">Pamantasan ng Lungsod ng Valenzuela</span>
+                            <ul class="timeline-achievements">
+                                <li>
+                                    <i class="fa-solid fa-users"></i>
+                                    Valenzuela Information Technology Society (VITS) Member
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-award"></i>
+                                    First Semester A.Y. 2024–2025 — PLV Dean's Lister
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-award"></i>
+                                    Second Semester A.Y. 2024–2025 — PLV Dean's Lister
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills -->
+            <div class="skills-section" data-aos="fade-up">
+                <div class="skills-header">
+                    <h3 class="subsection-title">
+                        <i class="fa-solid fa-lightbulb"></i>
+                        Technical Skills
+                    </h3>
+                    <div class="ai-badge">
+                        <i class="fa-solid fa-robot"></i>
+                        <span>AI-Enhanced Development</span>
+                    </div>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill-card" data-aos="zoom-in" data-aos-delay="0">
+                        <div class="skill-icon-wrapper">
+                            <i class="fa-brands fa-java"></i>
+                        </div>
+                        <span class="skill-name">Java</span>
+                        <div class="skill-level">
+                            <div class="skill-progress" data-width="85%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card" data-aos="zoom-in" data-aos-delay="50">
+                        <div class="skill-icon-wrapper">
+                            <i class="fa-brands fa-html5"></i>
+                        </div>
+                        <span class="skill-name">HTML5</span>
+                        <div class="skill-level">
+                            <div class="skill-progress" data-width="95%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="skill-icon-wrapper">
+                            <i class="fa-brands fa-css3-alt"></i>
+                        </div>
+                        <span class="skill-name">CSS3</span>
+                        <div class="skill-level">
+                            <div class="skill-progress" data-width="90%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card" data-aos="zoom-in" data-aos-delay="150">
+                        <div class="skill-icon-wrapper">
+                            <i class="fa-brands fa-js"></i>
+                        </div>
+                        <span class="skill-name">JavaScript</span>
+                        <div class="skill-level">
+                            <div class="skill-progress" data-width="80%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="skill-icon-wrapper">
+                            <i class="fa-brands fa-php"></i>
+                        </div>
+                        <span class="skill-name">PHP</span>
+                        <div class="skill-level">
+                            <div class="skill-progress" data-width="75%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card" data-aos="zoom-in" data-aos-delay="250">
+                        <div class="skill-icon-wrapper">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <span class="skill-name">Chart.js</span>
+                        <div class="skill-level">
+                            <div class="skill-progress" data-width="70%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Internship Section -->
+        <section id="internship" class="section">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Experience</span>
+                <h2 class="section-title">Internship Journey</h2>
+                <p class="section-subtitle">Real-world professional experience</p>
+            </div>
+
+            <div class="experience-card" data-aos="fade-up">
+                <div class="experience-header">
+                    <div class="company-logo">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+                    <div class="experience-title">
+                        <h3>Pandayan Bookshop Inc.</h3>
+                        <span class="experience-role">Web Developer Intern</span>
+                    </div>
+                    <div class="experience-duration">
+                        <i class="fa-solid fa-calendar"></i>
+                        <span>June 30, 2025 - October 20, 2025</span>
+                    </div>
+                </div>
+
+                <div class="experience-body">
+                    <div class="experience-section">
+                        <h4><i class="fa-solid fa-tasks"></i> Key Responsibilities</h4>
+                        <ul class="experience-list">
+                            <li>Developed and maintained web applications using HTML, CSS, JavaScript, PHP and Bootstrap</li>
+                            <li>Collaborated with team members on various projects using agile methodologies</li>
+                            <li>Participated in code reviews and quality assurance processes</li>
+                            <li>Learned industry best practices and modern development workflows</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-section">
+                        <h4><i class="fa-solid fa-trophy"></i> Key Achievements</h4>
+                        <ul class="experience-list achievements">
+                            <li>Successfully completed assigned projects within deadlines</li>
+                            <li>Contributed to improving code efficiency and performance</li>
+                            <li>Gained hands-on experience with real-world enterprise applications</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-tech">
+                        <h4><i class="fa-solid fa-code"></i> Technologies Used</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">Chart.js</span>
+                            <span class="tech-tag">Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Showcasing my best work and technical capabilities</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card-featured" data-aos="fade-up" data-aos-delay="0">
+                    <div class="project-image-slider" id="slider-1">
+                        <div class="slider-container">
+                            <img src="assets/image/project1-1.png" alt="PLV E-Alaga Screenshot 1" class="slider-image active">
+                            <img src="assets/image/project1-2.png" alt="PLV E-Alaga Screenshot 2" class="slider-image">
+                            <img src="assets/image/project1-3.png" alt="PLV E-Alaga Screenshot 3" class="slider-image">
+                            <img src="assets/image/project1-4.png" alt="PLV E-Alaga Screenshot 4" class="slider-image">
+                            <img src="assets/image/project1-5.png" alt="PLV E-Alaga Screenshot 5" class="slider-image">
+                            <img src="assets/image/project1-6.png" alt="PLV E-Alaga Screenshot 6" class="slider-image">
+                        </div>
+                        <div class="slider-controls">
+                            <button class="slider-btn prev" onclick="changeSlide('slider-1', -1)">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </button>
+                            <div class="slider-dots">
+                                <span class="dot active" onclick="goToSlide('slider-1', 0)"></span>
+                                <span class="dot" onclick="goToSlide('slider-1', 1)"></span>
+                                <span class="dot" onclick="goToSlide('slider-1', 2)"></span>
+                                <span class="dot" onclick="goToSlide('slider-1', 3)"></span>
+                                <span class="dot" onclick="goToSlide('slider-1', 4)"></span>
+                                <span class="dot" onclick="goToSlide('slider-1', 5)"></span>
+                            </div>
+                            <button class="slider-btn next" onclick="changeSlide('slider-1', 1)">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                        </div>
+                        <div class="project-overlay" onclick="openLightbox('slider-1')">
+                            <i class="fa-solid fa-expand"></i>
+                            <span>View Gallery</span>
+                        </div>
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <i class="fa-solid fa-stethoscope"></i>
+                            </div>
+                            <div class="project-title-group">
+                                <h3>PLV E-Alaga</h3>
+                                <span class="project-role">Technical Lead</span>
+                            </div>
+                        </div>
+
+                        <div class="project-tags">
+                            <span class="project-tag">Healthcare</span>
+                            <span class="project-tag">Web App</span>
+                            <span class="project-tag">Diagnostic Tool</span>
+                        </div>
+
+                        <h4 class="project-feature">
+                            <i class="fa-solid fa-notes-medical"></i>
+                            Symptom Checker System
+                        </h4>
+
+                        <p class="project-description">
+                            A comprehensive web-based diagnostic and self-assessment tool designed to enhance 
+                            medical services at the Pamantasan ng Lungsod ng Valenzuela clinic. Features 
+                            intelligent symptom analysis and user-friendly interface for students and faculty.
+                        </p>
+
+                        <div class="project-actions">
+                            <button class="btn btn-outline" onclick="openLightbox('slider-1')">
+                                <i class="fa-solid fa-images"></i>
+                                View Screenshots
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card-featured" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image-slider" id="slider-2">
+                        <div class="slider-container">
+                            <img src="assets/image/project2-1.png" alt="Timbangan Screenshot 1" class="slider-image active">
+                            <img src="assets/image/project2-2.png" alt="Timbangan Screenshot 2" class="slider-image">
+                            <img src="assets/image/project2-3.png" alt="Timbangan Screenshot 3" class="slider-image">
+                            <img src="assets/image/project2-4.png" alt="Timbangan Screenshot 4" class="slider-image">
+                        </div>
+                        <div class="slider-controls">
+                            <button class="slider-btn prev" onclick="changeSlide('slider-2', -1)">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </button>
+                            <div class="slider-dots">
+                                <span class="dot active" onclick="goToSlide('slider-2', 0)"></span>
+                                <span class="dot" onclick="goToSlide('slider-2', 1)"></span>
+                                <span class="dot" onclick="goToSlide('slider-2', 2)"></span>
+                                <span class="dot" onclick="goToSlide('slider-2', 3)"></span>
+                            </div>
+                            <button class="slider-btn next" onclick="changeSlide('slider-2', 1)">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                        </div>
+                        <div class="project-overlay" onclick="openLightbox('slider-2')">
+                            <i class="fa-solid fa-expand"></i>
+                            <span>View Gallery</span>
+                        </div>
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <i class="fa-solid fa-scale-balanced"></i>
+                            </div>
+                            <div class="project-title-group">
+                                <h3>Timbangan Tungo sa Kalusugan</h3>
+                                <span class="project-role">Full Stack Developer</span>
+                            </div>
+                        </div>
+
+                        <div class="project-tags">
+                            <span class="project-tag">Health Monitoring</span>
+                            <span class="project-tag">Employee Wellness</span>
+                            <span class="project-tag">Data Visualization</span>
+                        </div>
+
+                        <h4 class="project-feature">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                            Employee Health Tracking Platform
+                        </h4>
+
+                        <p class="project-description">
+                            A web-based health monitoring platform for Pandayan Bookshop employees to track 
+                            weight, BMI, monthly steps, blood pressure, and set personal health goals. 
+                            Features automated certificate generation and comprehensive health analytics.
+                        </p>
+
+                        <div class="project-actions">
+                            <button class="btn btn-outline" onclick="openLightbox('slider-2')">
+                                <i class="fa-solid fa-images"></i>
+                                View Screenshots
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Contact</span>
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="section-subtitle">Open for collaborations, opportunities, and interesting conversations</p>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-info-cards" data-aos="fade-right">
+                    <div class="contact-info-card">
+                        <div class="contact-icon-large">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="contact-info-content">
+                            <h4>Email</h4>
+                            <a href="mailto:clarkjakedemetion@gmail.com">clarkjakedemetion@gmail.com</a>
+                            <span class="contact-response">Usually responds within 24 hours</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-icon-large">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="contact-info-content">
+                            <h4>Phone</h4>
+                            <a href="tel:+639208515794">+63 920 851 5794</a>
+                            <span class="contact-response">Available Mon-Fri, 9AM-6PM</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-icon-large">
+                            <i class="fa-brands fa-facebook"></i>
+                        </div>
+                        <div class="contact-info-content">
+                            <h4>Facebook</h4>
+                            <a href="https://www.facebook.com/dm.demition" target="_blank" rel="noopener">Clark Jake Demition</a>
+                            <span class="contact-response">Connect socially</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-icon-large">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="contact-info-content">
+                            <h4>Location</h4>
+                            <span>Valenzuela City, Philippines</span>
+                            <span class="contact-response">Open to remote work worldwide</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-cta-box" data-aos="fade-left">
+                    <div class="cta-content">
+                        <h3>Ready to start a project?</h3>
+                        <p>I'm currently available for freelance work and open to full-time opportunities. 
+                        Let's discuss how I can help bring your ideas to life.</p>
+
+                        <div class="cta-buttons">
+                            <a href="mailto:clarkjakedemetion@gmail.com" class="btn btn-primary btn-large">
+                                <i class="fa-solid fa-paper-plane"></i>
+                                Send Message
+                            </a>
+                            <a href="https://www.facebook.com/dm.demition" target="_blank" class="btn btn-secondary btn-large" rel="noopener">
+                                <i class="fa-brands fa-facebook"></i>
+                                Connect on Facebook
+                            </a>
+                        </div>
+
+                        <div class="availability-status">
+                            <span class="status-dot"></span>
+                            <span class="status-text">Available for new projects</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="logo-icon"><i class="fa-solid fa-code"></i></span>
+                <span class="footer-name">Clark Jake N. Demition</span>
+            </div>
+            <p class="footer-tagline">Crafting digital experiences with passion & AI</p>
+            <div class="footer-social">
+                <a href="https://www.facebook.com/dm.demition" target="_blank" rel="noopener" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="mailto:clarkjakedemetion@gmail.com" aria-label="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="tel:+639208515794" aria-label="Phone">
+                    <i class="fa-solid fa-phone"></i>
+                </a>
+            </div>
+            <p class="footer-copy">© 2025 Clark Jake N. Demition. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" onclick="closeLightbox()">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <button class="lightbox-nav prev" onclick="lightboxChange(-1)">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <img src="" alt="Project Screenshot" id="lightbox-img">
+            <button class="lightbox-nav next" onclick="lightboxChange(1)">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+            <div class="lightbox-counter">
+                <span id="lightbox-current">1</span> / <span id="lightbox-total">6</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <i class="fa-solid fa-circle-check"></i>
+        <span id="toast-message">Message sent successfully!</span>
+    </div>
+
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>
